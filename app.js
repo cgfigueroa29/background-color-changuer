@@ -17,12 +17,12 @@ function getRandomIndex() {
 }
 
 const body = document.querySelector("body");
-const bgHexCodeSpanElement = document.querySelector("#bg-hex-code");
+const span = document.querySelector("#bg-hex-code");
 
 function changeBackgroundColor() {
   const color = darkColorsArr[getRandomIndex()];
 
-  bgHexCodeSpanElement.innerText = color;
+  span.innerText = color;
   body.style.backgroundColor = color;
 }
 const btn = document.querySelector("#btn");
